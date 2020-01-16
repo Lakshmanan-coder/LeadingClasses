@@ -1,0 +1,346 @@
+@import "./bootstrap.scss";
+
+*{
+    margin:0;
+    padding:0;
+}
+
+html{
+    @media screen and (max-width:1026px){
+        font-size:1px;
+    }}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    width:100%;
+    font-family: 'Nunito', sans-serif;
+   // box-shadow:0px 1px 5px  rgba(0,0,0,0.3);
+   border-bottom: 0.5px solid rgba(0,0,0,0.3);
+}
+
+nav{
+    width:95%;
+    margin:0 auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+   
+
+    img{
+        margin-top:10%;
+
+      
+    }
+
+}
+
+ul{
+    list-style: none;
+    display:flex;
+
+    @media screen and (max-width:1024px){
+        display:none;
+    }
+}
+
+li{
+   margin-right:1.2rem;
+   padding:0.7rem;
+ 
+   &:hover{
+    border-bottom:1px solid black;
+}
+   
+    a{
+       text-decoration: none;
+       color:black;
+       font-weight:600;
+
+   
+
+    }
+}
+
+.wrapper{
+    width:100%;
+    height:80vh;
+    background:url("./assets/unsplash-1.jpg") no-repeat;
+    background-size: cover;
+    background-position:center;
+    position:relative;
+    font-family: 'Montserrat', sans-serif;
+
+     &::after{
+         content:"";
+         width:100%;
+         height:100%;
+         background:rgba(0,0,0,0.7);
+         position: absolute;
+         top:0;
+         bottom:0;
+         left:0;
+         right:0;
+       
+     }
+.text-wrapper{
+        width:50%;
+        height:100%;
+        color:white;
+        position:absolute;
+        top:25%;
+        z-index:200;
+        margin:1rem;
+
+        @media screen and (max-width:1024px){
+         width:70%;
+         top:18%;
+        }
+    span{
+        font-family: 'Oswald', sans-serif;
+        font-weight:500;
+        font-size:2.5rem;
+        font-style:italic;
+        margin:1rem;
+    }
+
+    p{
+        font-size:1.5rem ;
+        margin:1rem;
+    }
+   
+     button{
+         font-size: 1.1rem;
+         margin:1rem;
+         border:none;
+         outline:none;
+         padding:1rem;
+         border-radius:20px;
+         margin-left:40%;
+         font-weight:700;
+         transition:transform 200ms ease-in;
+      
+
+        &:hover{
+            transform:scale(1.1);
+            box-shadow:0px 1px 2px rgba(255,255,255,0.5);
+
+        }
+     }
+         
+}
+}
+
+.orgz{
+    width:100%;
+    margin:0 auto;
+   
+    
+        h2{
+            color: rgba(0,0,0,0.99);
+            font-size: 2.5rem;
+            line-height: 3rem;
+            margin:2.5rem 1rem 2.5rem 1rem; 
+            font-weight:400;
+            text-align:center;
+            font-family: 'Nunito', sans-serif;
+        }
+.flex-wrapper{
+    display:flex;
+    margin:1rem;
+    @media screen and (max-width:1024px){
+        display:block;
+        margin-left:40%;
+    }
+
+
+        .custom-card{
+            width:33%;
+            display:flex;
+            flex-flow:column;
+            justify-content:space-around;
+            align-items:center;
+            @media screen and (max-width:1024px){
+            
+                margin-bottom:1rem;
+            }
+           
+            p{
+                padding:0.5rem;
+            }
+            
+        }
+}
+
+.carousel-item{
+
+    width:35%;
+    height:30vh;
+}
+}
+
+.offline{
+    width:80%;
+    margin:0 auto;
+} h2{
+    text-align:center;
+ color: black;
+            font-size: 2.5rem;
+            line-height: 3rem;
+            margin:2.5rem 1rem 2rem 1rem; 
+            font-weight:400;
+            font-family: 'Nunito', sans-serif;
+}
+
+.card-wrapper{
+    display:flex;
+    justify-content: space-around;
+    margin-bottom:1rem;
+    @media screen and (max-width:1024px){
+        display:block;
+    }
+}
+
+.card{
+    box-shadow:  7px 7px 5px rgba(0,0,0,.04),
+    -8px -7px 5px rgba(255,255,255,.8);
+    border-radius:20px;
+
+    @media screen and (max-width:1024px){
+    width:80% !important;
+    margin:0 auto;
+    margin-bottom:1rem;
+}}
+
+.card-wrapper2{
+    display:flex;
+     justify-content: center;
+     align-items:center;
+     margin-bottom:1rem;
+}
+
+.notyet{
+    width:80%;
+    margin:0 auto;
+    h3{
+        text-align:center;
+        font-family: 'Nunito', sans-serif;
+    }
+}
+
+.custom-button{
+    text-align: center;
+    padding:1rem;
+    border-radius:15px;
+    border:none;
+    outline:none;
+    margin:1rem;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
+    transition: transform 200ms ease-in-out;
+    &:hover{
+        transform:scale(1.1);
+    }
+    a{ 
+        text-decoration:none;
+        color:black;
+         
+    }
+   
+}
+
+.wrapper1{
+    width:100%;
+    display:flex;
+    flex-flow:column;
+    justify-content: space-between;
+    align-items:center;
+    img{
+        width:20%;
+        height:20%;
+    }
+}
+
+.flip-box {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; 
+  }
+  
+
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+ 
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+
+  .flip-box-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+ 
+  .flip-box-back {
+    background-color: white;
+    color: black;
+    font-size:0.8rem;
+    transform: rotateY(180deg);
+  }
+
+  .bio{
+      margin-top:1rem;
+  }
+  .section{
+    margin:1rem 0 0 0 ;
+    width:100%;
+    height:20vh;
+    background:grey;
+  }
+  .footer{
+     
+      display:flex;
+      justify-content: space-between;
+       
+      i{
+
+       font-size:1.5rem;
+      }
+      .share,.follow,.contact{
+          margin:1rem;
+          p{
+              font-size:1.2rem;
+          }
+      }
+      .contact{
+          display:flex;
+          font-size:1.2rem;
+           p{
+               margin-right:1rem;
+           }
+      }
+
+
+  }
+
+  .align{
+      text-align: center;
+  }
